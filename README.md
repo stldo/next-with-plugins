@@ -1,6 +1,6 @@
-# next-with-plugins
+# next-with-plugins [![npm][1]][2]
 
-Adds a `plugins` option to `next.config.js` for easy plugins configuration on
+Add a `plugins` option to `next.config.js` for easy plugin configuration on
 Next.js — inspired by Gatsby.
 
 ## Installation
@@ -15,6 +15,8 @@ npm install next-with-plugins
 configure all your plugins:
 
 ```js
+/* next.config.js */
+
 const withPlugins = require('next-with-plugins')
 
 module.exports = withPlugins({
@@ -28,6 +30,8 @@ module.exports = withPlugins({
 Or if you use a function:
 
 ```js
+/* next.config.js */
+
 const withPlugins = require('next-with-plugins')
 
 module.exports = withPlugins((phase, { defaultConfig }) => ({
@@ -44,6 +48,8 @@ If a plugin does not need any options, you can add its name as a string to the
 plugins array:
 
 ```js
+/* next.config.js */
+
 const withPlugins = require('next-with-plugins')
 
 module.exports = withPlugins({
@@ -61,6 +67,8 @@ showing how to write an object with keys to resolve the plugin name and an
 options object with any applicable settings:
 
 ```js
+/* next.config.js */
+
 const withPlugins = require('next-with-plugins')
 
 module.exports = withPlugins({
@@ -82,6 +90,8 @@ If the plugin should be enabled only in specific phases, you can specify them
 here:
 
 ```js
+/* next.config.js */
+
 const { PHASE_PRODUCTION_BUILD } = require('next/constants')
 const withPlugins = require('next-with-plugins')
 
@@ -105,6 +115,8 @@ If a plugin was not made to be used with `next-with-plugins` and you want to
 configure its options, set the `legacy` property to `true`:
 
 ```js
+/* next.config.js */
+
 const withPlugins = require('next-with-plugins')
 
 module.exports = withPlugins({
@@ -124,6 +136,8 @@ If you don't need to set the plugin options, you can just add its name to the
 plugins array:
 
 ```js
+/* next.config.js */
+
 const withPlugins = require('next-with-plugins')
 
 module.exports = withPlugins({
@@ -165,4 +179,6 @@ module.exports = (nextConfig, pluginOptions) => {
 
 [The MIT License][license]
 
+[1]: https://img.shields.io/npm/v/next-with-plugins
+[2]: https://www.npmjs.com/package/next-with-plugins
 [license]: ./LICENSE
