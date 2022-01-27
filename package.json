@@ -1,0 +1,18 @@
+{
+  "name": "next-with-plugins",
+  "version": "0.0.1",
+  "description": "Easy plugin configuration for Next.js",
+  "repository": "https://github.com/stldo/next-with-plugins",
+  "keywords": [
+    "next.js",
+    "next",
+    "plugins",
+    "react"
+  ],
+  "main": "index.js",
+  "peerDependencies": {
+    "next": "^12.0.0"
+  },
+  "author": "stldo (https://github.com/stldo)",
+  "license": "MIT"
+}
