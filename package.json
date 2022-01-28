@@ -5,9 +5,10 @@
   "repository": "https://github.com/stldo/next-with-plugins",
   "keywords": [
     "next.js",
+    "nextjs",
     "next",
-    "plugins",
-    "react"
+    "plugin",
+    "next-plugin"
   ],
   "main": "index.js",
   "peerDependencies": {
