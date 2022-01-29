@@ -1,7 +1,7 @@
 # next-with-plugins [![npm][1]][2]
 
-Add a `plugins` option to `next.config.js` for easy plugin configuration on
-Next.js — inspired by Gatsby.
+Easy plugin management for Next.js. `next-with-plugins` adds a `plugins` option
+to `next.config.js` that works the same way as in the Gatsby config file.
 
 ## Installation
 
